@@ -1,0 +1,7 @@
+ser-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://localhost:4200/home/sitemap.xml

@@ -6,7 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { UniversalComponent } from './universal.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent,data: {title:"home page is here",discription:"get the home page here  for showing data",ogTitle: 'Description of Home Component for social media',}},
+  { path: '', component: HomeComponent,data: {title:"home page is here",discription:"get the home page here  for showing data",ogTitle: 'Description of Home Component for social media',}},
 
   { path: 'login', component: LoginComponent,data: {title:"login page is here",discription:"get the login page here  for showing data",ogTitle: 'Description of Login Component for social media',}},
 

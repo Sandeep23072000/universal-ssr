@@ -1,0 +1,38 @@
+<div class="mb-5">
+    <div class="picsum-img-wrapper">
+        <div class="carousel-inner mt-5 mb-5">
+            <button type="button" class="carousel-control-prev text-primary">
+                <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden"></span>
+            </button>
+            <div class="container-fluid ">
+
+                <div class="row ">
+                    <div class="col-3 ">
+                        
+                        <div class="carousel-item active">
+                            <div class="" *ngFor="let item of jobsdata">
+                                <div class="card rounded-5 p-3  mx-5 mt-3">
+                                <a class="text-primary mt-3 mb-3 fw-bold fs-6 text-decoration-none"
+                                    [routerLink]="['/details']">{{item.title}}</a>
+                                <h6>
+                                    {{item.state_detail.name}} {{item.state_detail.country_detail.name}}
+                                </h6>
+                                <h6> SGD - {{item.min_salary}}-{{item.max_salary}} </h6>
+                                <h6>
+                                    {{item.experiance_from}} - {{item.experiance_to}} Years Experience
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <button type="button" class="carousel-control-next text-primary">
+        <span aria-hidden="true" class="carousel-control-next-icon"></span>
+        <span class="visually-hidden"></span>
+    </button>
+</div>

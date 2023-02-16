@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://localhost:4200/home/sitemap.xml
+Sitemap: https://universal-ssr.netlify.app/home/sitemap.xml

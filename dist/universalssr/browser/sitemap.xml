@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://localhost:4200/</loc>
+    <loc>https://universal-ssr.netlify.app/</loc>
   </url>
   <url>
-    <loc>https://localhost:4200/home</loc>
+    <loc>https://universal-ssr.netlify.app/home</loc>
   </url>
   <url>
-    <loc>https://localhost:4200/login</loc>
+    <loc>https://universal-ssr.netlify.app/login</loc>
   </url>
   <url>
-    <loc>https://localhost:4200/details</loc>
+    <loc>https://universal-ssr.netlify.app/details</loc>
   </url>
 </urlset>

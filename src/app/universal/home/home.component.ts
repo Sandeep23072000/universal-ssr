@@ -29,30 +29,29 @@ export class HomeComponent implements OnInit {
     // this.canservice.setCanonicalURL();
     // SEO metadata
     // this.title.setTitle('description about uniiversal server side rendering');
-    this.meta.addTag({ name: 'description', content: 'longDescription' });
-    this.meta.addTag({name:"google-site-verification",content:"IPByWYTtr2DdNdfBxSw-ONrm2wkK2jzC8b8_bijIlgY"})
+    this.meta.addTag({ name: 'description', content: 'When we use Angular Universal, we will render the initial HTML and CSS shown to the user ahead of time. We can do it for example at build time, or on-the-fly on the server when the user requests the page.' });
     // Discription metadata
-    this.meta.addTag({ name: 'universal', content: 'summary' });
-    this.meta.addTag({ name: 'universal:site', content: '@AngularUniv' });
-    this.meta.addTag({ name: 'universal:title', content: 'description' });
-    this.meta.addTag({ name: 'universal:description', content: 'description' });
-    this.meta.addTag({ name: 'universal:text:description', content: 'description' });
-    this.meta.addTag({ name: 'universal:image', content: 'https://avatars3.githubusercontent.com/u/16628445?v=3&s=200' });
+    this.meta.addTag({ name: 'universal', content: 'Angular Universal is a Pre-Rendering solution for Angular' });
+    this.meta.addTag({ name: 'universal:site', content: 'https://universal-ssr.netlify.app/' });
+    this.meta.addTag({ name: 'universal:title', content: 'Angular Universal for SEO' });
+    this.meta.addTag({ name: 'universal:description', content: 'When we use Angular Universal, we will render the initial HTML and CSS shown to the user ahead of time. We can do it for example at build time, or on-the-fly on the server when the user requests the page.' });
+    this.meta.addTag({ name: 'universal:text:description', content: 'When we use Angular Universal, we will render the initial HTML and CSS shown to the user ahead of time. We can do it for example at build time, or on-the-fly on the server when the user requests the page.' });
+    this.meta.addTag({ name: 'universal:image', content: 'Angular Universal Images for SEO' });
 
     const tags = this.meta.getTags('name=universal')
     console.log(tags);
 
     this.meta.addTag({ property: "og:title", content: "universal tittle according to update tags" });
-    this.meta.addTag({ property: "og:type", content: "website" });
-    this.meta.addTag({ property: "og:image", content: "show image here" });
-    this.meta.addTag({ property: "og:url", content: "http//:localhost:4200" });
+    this.meta.addTag({ property: "og:type", content: "Angular Universal for SEO" });
+    this.meta.addTag({ property: "og:image", content: "Angular Universal Images" });
+    this.meta.addTag({ property: "og:url", content: "https://universal-ssr.netlify.app/" });
 
 
-    this.meta.addTag({ name: "twitter:card", content: "summary for twitter card" });
-    this.meta.addTag({ name: "twitter:site", content: "@nytimesbits" });
+    this.meta.addTag({ name: "twitter:card", content: "Angular Universal SEO" });
+    this.meta.addTag({ name: "twitter:site", content: "https://universal-ssr.netlify.app/" });
     this.meta.addTag({ name: "twitter:creator", content: "@nickbilton" });
     this.meta.addTag({ name: "twitter:title", content: "summary for angular universal twitter card" });
-    this.meta.addTag({ name: "twitter:description", content: "Hi there! 👋 Thank you for visiting my website!" });
+    this.meta.addTag({ name: "twitter:description", content: "When we use Angular Universal, we will render the initial HTML and CSS shown to the user ahead of time. We can do it for example at build time, or on-the-fly on the server when the user requests the page." });
     this.meta.addTag({ name: "twitter:image", content: "https:///samvloeberghs.be/assets/share/home.png" });
     this.meta.addTag({ name: "twitter:image:alt", content: "Webdeveloper" });
 

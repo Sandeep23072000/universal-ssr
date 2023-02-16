@@ -10,7 +10,7 @@ const routes: Routes = [
 
   { path: 'login', component: LoginComponent,data: {title:"login page is here",discription:"get the login page here  for showing data",ogTitle: 'Description of Login Component for social media',}},
 
-  {path: 'details', component: DetailsComponent},
+  {path: 'details', component: DetailsComponent,data: {title:"details page is here",discription:"get the details page here  for showing data",ogTitle: 'Description of Login Component for social media',}},
 ];
 
 @NgModule({

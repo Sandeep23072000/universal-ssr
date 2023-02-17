@@ -14,7 +14,7 @@ export class DetailsComponent implements OnInit  {
     
     this.meta.updateTag({ property: "og:title", content: "details page is here" });
     this.meta.updateTag({ property: "og:type", content: "website" });
-    this.meta.updateTag({ property: "og:image", content: "show image here about details page" });
+    this.meta.updateTag({ property: "og:image", content: "https://picsum.photos/200/300?random=2" });
     this.meta.updateTag({ property: "og:url", content: "http//:localhost:4200/details" });
 
     this.meta.updateTag({ name: "twitter:card", content: "summary for twitter card on details page" });

@@ -52,7 +52,7 @@ export class HomeComponent implements OnInit {
     this.meta.addTag({ name: "twitter:creator", content: "@nickbilton" });
     this.meta.addTag({ name: "twitter:title", content: "summary for angular universal twitter card" });
     this.meta.addTag({ name: "twitter:description", content: "When we use Angular Universal, we will render the initial HTML and CSS shown to the user ahead of time. We can do it for example at build time, or on-the-fly on the server when the user requests the page." });
-    this.meta.addTag({ name: "twitter:image", content: "https:///samvloeberghs.be/assets/share/home.png" });
+    this.meta.addTag({ name: "twitter:image", content: "https://picsum.photos/200/300?random=2" });
     this.meta.addTag({ name: "twitter:image:alt", content: "Webdeveloper" });
 
     this.meta.addTag({

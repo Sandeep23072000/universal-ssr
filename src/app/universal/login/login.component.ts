@@ -28,6 +28,11 @@ export class LoginComponent implements OnInit {
       { name: 'twitter:description', content: 'This is my Angular Universal application' },
 
     ])
+    this.meta.addTag({ name: "twitter:card", content: "summary" });
+    this.meta.addTag({ name: "twitter:site", content: "@getblogs" });
+    this.meta.addTag({ name: "twitter:creator", content: "@rahulsh" });
+    this.meta.addTag({ name: "twitter:title", content: "Contactus=>Getblogs :A Place for coders to read and write a blog." });
+    this.meta.addTag({ name: "twitter:description", content: "Contactus- getblog" });
   }
 
 }

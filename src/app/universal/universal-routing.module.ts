@@ -11,7 +11,7 @@ const routes: Routes = [
 
   { path: 'login', component: LoginComponent,data: {title:"Angular Universal login page is here for use the SEO",discription:"get the login page here  for showing data",ogTitle: 'Description of Login Component for social media',}},
 
-  {path: 'details', component: DetailsComponent,data: {title:"Angular Universal details page is here for use the SEO",discription:"get the details page here  for showing data",ogTitle: 'Description of Login Component for social media',}},
+  {path: 'details/:id', component: DetailsComponent,data: {title:"Angular Universal details page is here for use the SEO",discription:"get the details page here  for showing data",ogTitle: 'Description of Login Component for social media',}},
 ];
 
 @NgModule({

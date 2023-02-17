@@ -8,7 +8,7 @@
         This is because together with the server-side rendered HTML, we will also ship to the browser a normal
         client-side Angular Application.</h5>
 </div>
-<div class="mb-5">
+<!-- <div class="mb-5">
 
     <div class="container-fluid ">
         <div class="carousel-item active d-flex">
@@ -26,5 +26,24 @@
                 </div>
             </div>
         </div>
+    </div>
+</div> -->
+
+<div>
+    <div class="container">
+        <div *ngFor="let item of productlist">
+            <div class="card rounded-5 p-3  mx-5 mt-3 w-25">
+                <a class="text-primary mt-3 mb-3 fw-bold fs-6 text-decoration-none"
+                    [routerLink]="['/details', item.id]">{{item.title}}</a>
+                <!-- <h6>
+                    Price:- {{item.price}}
+                </h6>
+                <h6> Rating:-{{item.rating}}</h6>
+                <h6>
+                    Description:-{{item.description}}
+                </h6> -->
+            </div>
+        </div>
+
     </div>
 </div>

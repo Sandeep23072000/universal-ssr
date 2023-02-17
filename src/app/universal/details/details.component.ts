@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-details',
@@ -7,8 +9,14 @@ import { Meta, Title } from '@angular/platform-browser';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
-
-  constructor(private meta: Meta, private tittle: Title) { }
+    productlist: any;
+  constructor(private meta: Meta, private tittle: Title, private route: ActivatedRoute, private http: HttpClient) {
+     const iddata = this.route.snapshot.params['id'];
+     this.http.get('https://dummyjson.com/products/'+iddata).subscribe((response:any) => {
+      console.log(response)
+      this.productlist = response;
+  })
+}
 
   ngOnInit(): void {
 

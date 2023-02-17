@@ -11,6 +11,8 @@ import { CanonicalService } from 'src/app/services/canonical.service';
 })
 export class HomeComponent implements OnInit {
   jobsdata: any;
+  productlist: any;
+  data: any;
 
   constructor(
     // private route: ActivatedRoute,
@@ -19,9 +21,17 @@ export class HomeComponent implements OnInit {
     private meta: Meta,
     private canservice: CanonicalService
   ) {
-    this.http.get('https://virvit.mydevpartner.website/vvapi/v1/jobs/').subscribe((response: any) => {
-      console.log(response.results);
-      this.jobsdata = response.results;
+    this.http.get('https://dummyjson.com/products').subscribe((response:any) => {
+      console.log(response)
+      // response.products.forEach((item:any) => {
+      //   console.log(item)
+      // });
+      this.productlist = response.products; 
+      console.log(this.productlist);
+      
+    // this.http.get('https://virvit.mydevpartner.website/vvapi/v1/jobs/').subscribe((response: any) => {
+    //   console.log(response.results);
+    //   this.jobsdata = response.results;
     });
   }
   ngOnInit(): void {

@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
 
     this.meta.addTag({ property: "og:title", content: "universal tittle according to update tags" });
     this.meta.addTag({ property: "og:type", content: "Angular Universal for SEO" });
-    this.meta.addTag({ property: "og:image", content: "Angular Universal Images" });
+    this.meta.addTag({ property: "og:image", content: "https://picsum.photos/200/300?random=2" });
     this.meta.addTag({ property: "og:url", content: "https://universal-ssr.netlify.app/" });
 
 

@@ -1,0 +1,4 @@
+.carousel-item{
+    overflow: hidden;
+    flex-wrap: wrap;
+}

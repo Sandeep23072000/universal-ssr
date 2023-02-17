@@ -45,6 +45,7 @@ export class HomeComponent implements OnInit {
     this.meta.addTag({ property: "og:type", content: "Angular Universal for SEO" });
     this.meta.addTag({ property: "og:image", content: "https://picsum.photos/200/300?random=2" });
     this.meta.addTag({ property: "og:url", content: "https://universal-ssr.netlify.app/" });
+    this.meta.addTag({ property: "og:description", content: "Open Graph meta tags are snippets of code that control how URLs are displayed when shared on social media. They're part of Facebook's Open Graph protocol and are also used by other social media sites, including LinkedIn and Twitter" });
 
 
     this.meta.addTag({ name: "twitter:card", content: "Angular Universal SEO" });

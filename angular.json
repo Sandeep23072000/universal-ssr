@@ -25,11 +25,9 @@
               "src/assets",
               "src/robots.txt",
               "src/sitemap.xml",
-              {
-                "glob": "_redirects",
-                "input": "src",
-                "output": "/"
-              }
+              
+                "src/_redirects"
+              
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",

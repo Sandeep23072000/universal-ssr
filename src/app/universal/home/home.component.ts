@@ -23,9 +23,6 @@ export class HomeComponent implements OnInit {
   ) {
     this.http.get('https://dummyjson.com/products').subscribe((response:any) => {
       console.log(response)
-      // response.products.forEach((item:any) => {
-      //   console.log(item)
-      // });
       this.productlist = response.products; 
       console.log(this.productlist);
       
@@ -51,12 +48,12 @@ export class HomeComponent implements OnInit {
     // const tags = this.meta.getTags('name=universal')
     // console.log(tags);
 
-    this.meta.addTag({ property: "og:title", content: "universal tittle according to update tags" });
-    this.meta.addTag({ property: "og:type", content: "Angular Universal for SEO" });
+    this.meta.addTag({ property: "og:title", content: "List of products" });
+    this.meta.addTag({ property: "og:type", content: "Here, We can see product list according to desired products." });
     this.meta.addTag({ property: "og:image", content: "https://picsum.photos/200/300?random=2" });
     this.meta.addTag({ property: "og:image:alt", content: "Og Image" });
     this.meta.addTag({ property: "og:url", content: "https://universal-ssr.netlify.app/" });
-    this.meta.addTag({ property: "og:description", content: "Open Graph meta tags are snippets of code that control how URLs are displayed when shared on social media. They're part of Facebook's Open Graph protocol and are also used by other social media sites, including LinkedIn and Twitter" });
+    this.meta.addTag({ property: "og:description", content: "Since some online shoppers only scan text on websites, it might be helpful to use bullet points that cover the most important product details. Bullet points should generally be used for specs (like dimensions) or short phrases (like features) so they are quick and easy to read." });
 
 
     // this.meta.addTag({ name: "twitter:card", content: "summary" });
@@ -69,12 +66,13 @@ export class HomeComponent implements OnInit {
 
     this.meta.addTag({ name: "twitter:card", content: "summary" });
     this.meta.addTag({ name: "twitter:site", content: "@getblogs" });
+    this.meta.addTag({ name: "twitter:image", content: "https://picsum.photos/200/300?random=2" });
     this.meta.addTag({ name: "twitter:creator", content: "@rahulsh" });
-    this.meta.addTag({ name: "twitter:title", content: "Contactus=>Getblogs :A Place for coders to read and write a blog." });
+    this.meta.addTag({ name: "twitter:title", content: "Contactus=>Getblogs :A Place for coders to read about the products like electronics products and others." });
     this.meta.addTag({ name: "twitter:description", content: "Contactus- getblog" });
 
     this.meta.addTag({
-      name: 'keywords', content: 'angular universal, angular universal tutorial, angular universal vs angularangular, universal stackblitz, angular universal seo, angular universal deployment, angular universal vs next js, angular universal routing not working, angular universal prerender, angular universal api calls, angular universal api is available in which package, angular universal alternative, angular universal, app angular universal, api angular universal, aws angular universal, aws amplify, angular universal, angular 15 angular universal build, angular universal build production, angular universal benefits, angular universal base href, angular universal best practices, angular universal boilerplate, angular universal bundle, angular universal builders, angular universal caching, angular universal cookies, angular universal check if server, angular universal cors, angular universal course, angular universal compression, angular universal cdn, angular universal command, angular universal dynamic content, angular universal deploy, nginx angular universal document is not defined, angular universal demo, angular universal dynamic meta tags, angular universal dynamic routes, angular universal docker, angular universal example, angular universal existing project, angular universal example stackblitz, angular universal example github, angular universal environment variables, angular universal error networkerror, angular universal error network error at xmlhttprequest.send, angular universal elastic beanstalk'
+      name: 'keywords', content: 'product details,product details page design,product details are not stamped on lead,product details page design html,product details example,product details page,product details table,product details page design bootstrap,product details page design codepen,product details api,product details app,product details amazon,product details acer,product details an,product amount details hackerrank solution,product data analyst,product details by barcode,product details bootstrap,product details by hsn code,product details by serial number,product details bootstrap 5,product details by qr code online,product details by barcode online,product details by qr code,product details card,product details codepen,product details card codepen,product details component in angular,product details css,product details card design,product details c# cognizant,product description copywriting,product details design,product details dataset,product details database,product details design codepen,product information database,product description definition,product description design'
     });
   }
 

@@ -6,12 +6,12 @@ import { LoginComponent } from './login/login.component';
 import { UniversalComponent } from './universal.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent,data: {title:"Angular Universal home page is here for use the SEO",discription:
-  "Angular Universal executes on the server, generating static application pages that later get bootstrapped on the client. This means that the application generally renders more quickly, giving users a chance to view the application layout before it becomes fully interactive",ogTitle: 'Description of Home Component for social media',}},
+  { path: '', component: HomeComponent,data: {title:"List of Products",discription:
+  "Here,We discribe about the products list",ogTitle: 'Description of Home Component for social media',}},
 
-  { path: 'login', component: LoginComponent,data: {title:"Angular Universal login page is here for use the SEO",discription:"get the login page here  for showing data",ogTitle: 'Description of Login Component for social media',}},
+  { path: 'login', component: LoginComponent,data: {title:"Login page is here for use the user information",discription:"get the login page here  for showing data",ogTitle: 'Description of Login Component for social media',}},
 
-  {path: 'details/:id', component: DetailsComponent,data: {title:"Angular Universal details page is here for use the SEO",discription:"get the details page here  for showing data",ogTitle: 'Description of Login Component for social media',}},
+  {path: 'details/:id', component: DetailsComponent,data: {title:"Details of selected products",discription:"get the details page here  for showing data about the product details",ogTitle: 'Description of Details Component for social media',}},
 ];
 
 @NgModule({

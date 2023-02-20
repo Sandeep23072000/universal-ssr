@@ -7,34 +7,43 @@
         <p class="mx-4 text-secondary">We will first learn about the main use cases for Angular Universal, so that we know when to use it and why.</p>
         <p class="mx-4 text-secondary">Then we will start by using the Angular CLI to quickly add an Universal bundle to an existing application. We will then write step-by-step our own Angular Universal Express Server from scratch!</p>
         <p class="mx-4 text-secondary">We will make our application search engine (SEO) friendly and compatible with social media crawlers (for example Facebook or Twitter).</p> -->
-        
+
     </div>
 </div>
 
 <div>
     <div class="container">
-        <div>
-            <div class="card rounded-5 p-3  mx-5 mt-3 w-75s">
-                <a class="text-primary mt-3 mb-3 fw-bold fs-6 text-decoration-none">{{productlist?.title}}</a>
-                <h6>
-                    Brand:- {{productlist?.brand}}
-                </h6>
-                <h6>
-                    Category:- {{productlist?.category}}
-                </h6>
-                <h6>
-                    Price:- {{productlist?.price}}
-                </h6>
-                <h6>
-                    Stock:- {{productlist?.stock}}
-                </h6>
-                <h6>
-                    DiscountPercentage:- {{productlist?.discountPercentage}}
-                </h6>
-                <h6> Rating:-{{productlist?.rating}}</h6>
-                <h6>
-                    Description:-{{productlist?.description}}
-                </h6>
+
+        <div class="card rounded-5 p-3  mx-5 mt-3 w-75s">
+            <div class="row">
+                <div class="col-6">
+                    <a class="text-primary mt-3 mb-3 fw-bold fs-6 text-decoration-none">{{productlist?.title}}</a>
+                    <h6>
+                        Brand:- {{productlist?.brand}}
+                    </h6>
+                    <h6>
+                        Category:- {{productlist?.category}}
+                    </h6>
+                    <h6>
+                        Price:- {{productlist?.price}}
+                    </h6>
+                    <h6>
+                        Stock:- {{productlist?.stock}}
+                    </h6>
+                    <h6>
+                        DiscountPercentage:- {{productlist?.discountPercentage}}
+                    </h6>
+                    <h6> Rating:-{{productlist?.rating}}</h6>
+                    <h6>
+                        Description:-{{productlist?.description}}
+                    </h6>
+                </div>
+                <div class="col-6">
+                    <div *ngFor="let item of productlist?.images">
+
+                        <img src="{{item}}" alt="Product Image">
+                    </div>
+                </div>
             </div>
         </div>
 

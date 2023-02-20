@@ -7,7 +7,7 @@ import { UniversalComponent } from './universal.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent,data: {title:"List of Products",discription:
-  "Here,We discribe about the products list",ogTitle: 'Description of Home Component for social media',}},
+  "Here,We discribe about the products list",ogTitle: 'Description of Home Component for social media', keywords: 'product details,product details page design,product details on products,product details page',}},
 
   { path: 'login', component: LoginComponent,data: {title:"Login page is here for use the user information",discription:"get the login page here  for showing data",ogTitle: 'Description of Login Component for social media',}},
 

@@ -11,7 +11,7 @@ const routes: Routes = [
 
   { path: 'login', component: LoginComponent,data: {title:"Login page is here for use the user information",discription:"get the login page here  for showing data",ogTitle: 'Description of Login Component for social media',}},
 
-  {path: 'details/:id', component: DetailsComponent,data: {title:"Details of selected products",discription:"get the details page here  for showing data about the product details",ogTitle: 'Description of Details Component for social media',}},
+  {path: 'details/:id', component: DetailsComponent},
 ];
 
 @NgModule({

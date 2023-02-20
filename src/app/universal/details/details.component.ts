@@ -30,15 +30,6 @@ export class DetailsComponent implements OnInit {
     this.meta.updateTag({ property: "og:description", content: "Since some online shoppers only scan text on websites, it might be helpful to use bullet points that cover the most important product details. Bullet points should generally be used for specs or short phrases  so they are quick and easy to read." });
 
 
-    // this.meta.updateTag({ name: "twitter:card", content: "summary for twitter card on details page" });
-    // this.meta.updateTag({ name: "twitter:site", content: "herre iis a twitter site for use the details page" });
-    // this.meta.updateTag({ name: "twitter:creator", content: "elone musk" });
-    // this.meta.updateTag({ name: "twitter:title", content: "summary for angular universal twitter card on details page" });
-    // this.meta.updateTag({ name: "twitter:description", content: "Hi there! 👋 Thank you for visiting my website's details page!" });
-    // this.meta.updateTag({ name: "twitter:image", content: "here are images for using the details page" });
-    // this.meta.updateTag({ name: "twitter:image:alt", content: "Webdeveloper details image" });
-
-
     this.meta.updateTag({ name: "twitter:card", content: "summary" });
     this.meta.updateTag({ name: "twitter:site", content: "@getproducts" });
     this.meta.updateTag({ name: "twitter:creator", content: "@productsh" });

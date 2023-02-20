@@ -13,7 +13,7 @@ export class DetailsComponent implements OnInit {
   productlist: any;
   images: any;
 
-  constructor(private meta: Meta, private tittle: Title, private route: ActivatedRoute, private http: HttpClient, private canService: CanonicalService) {
+  constructor(private meta: Meta, private title: Title, private route: ActivatedRoute, private http: HttpClient, private canService: CanonicalService) {
     const iddata = this.route.snapshot.params['id'];
     this.http.get('https://dummyjson.com/products/' + iddata).subscribe((response: any) => {
       console.log(response)
@@ -23,7 +23,9 @@ export class DetailsComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.canService.setCanonicalURL();
+    // this.canService.setCanonicalURL();
+    this.title.setTitle('Product Details List for selected Product');
+    
     this.meta.updateTag({ property: "og:title", content: "Product Details page is here" });
     this.meta.updateTag({ property: "og:type", content: "website" });
     this.meta.updateTag({ property: "og:image", content: "https://picsum.photos/200/300?random=2" });

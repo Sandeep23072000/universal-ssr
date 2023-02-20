@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
 
     // this.canservice.setCanonicalURL();
     // SEO metadata
-    // this.title.setTitle('description about uniiversal server side rendering');
+    this.title.setTitle('Product List for Products');
     this.meta.addTag({ name: 'description', content: 'The product list is based on list of product which have many types of products like electronics items like mobile, laptop and more.', keywords: 'product list,product quantity list,product list of quest pharmaceuticals,qnet products list,woocommerce product list query,product list of quest,dokan_product_listing_query,amazon product listing quality,list.product power query,product list react,product list react native,product_list_random,product recalls list,product recall list uk,product rate list,product retailers list,cannatrek product list reddit,product list sample,product list sample data,product list smart value,product list sample api,product list synonyms,product list shortcode woocommerce,product list screen,product list schema,product list template,product list template html,product list template excel,product list template bootstrap,product list table,product list template free download,product list template html css,product list template with pictures excel,product list ui,product list ux,unilever products list,product listing upwork,product unit list,product list of unimed unihealth'});
     
 

@@ -11,9 +11,24 @@
   <link rel="preload" href="ui.js" as="script" />
   <link rel="canonical" href="https://universal-ssr.netlify.app/">
   <link rel="canonical" href="https://universal-ssr.netlify.app/details">
-  
+
 
 </head>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Example Business",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "City",
+      "addressRegion": "State",
+      "postalCode": "12345",
+      "streetAddress": "123 Main St."
+    },
+    "telephone": "(123) 456-7890"
+  }
+  </script>
 
 <body>
   <app-root></app-root>

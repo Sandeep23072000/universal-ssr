@@ -13,11 +13,11 @@ export class DetailsComponent implements OnInit {
   images: any;
 
   constructor(private meta: Meta, private tittle: Title, private route: ActivatedRoute, private http: HttpClient) {
-    const iddata = this.route.snapshot.params['id'];
-    this.http.get('https://dummyjson.com/products/' + iddata).subscribe((response: any) => {
-      console.log(response)
-      this.productlist = response;
-    })
+    // const iddata = this.route.snapshot.params['id'];
+    // this.http.get('https://dummyjson.com/products/' + iddata).subscribe((response: any) => {
+    //   console.log(response)
+    //   this.productlist = response;
+    // })
   }
 
   ngOnInit(): void {

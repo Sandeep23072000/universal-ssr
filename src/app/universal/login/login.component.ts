@@ -29,9 +29,9 @@ export class LoginComponent implements OnInit {
 
     ])
     this.meta.addTag({ name: "twitter:card", content: "summary" });
-    this.meta.addTag({ name: "twitter:site", content: "@getblogs" });
-    this.meta.addTag({ name: "twitter:creator", content: "@rahulsh" });
-    this.meta.addTag({ name: "twitter:title", content: "Contactus=>Getblogs :A Place for coders to read and write a blog." });
+    this.meta.addTag({ name: "twitter:site", content: "@getproducts" });
+    this.meta.addTag({ name: "twitter:creator", content: "@productlist" });
+    this.meta.addTag({ name: "twitter:title", content: "" });
     this.meta.addTag({ name: "twitter:description", content: "Contactus- getblog" });
   }
 

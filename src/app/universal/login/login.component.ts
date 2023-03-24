@@ -23,9 +23,7 @@ export class LoginComponent implements OnInit {
     this.meta.addTags([
       { name: 'og:title', content: 'My Angular Universal Application' },
       { name: 'og:description', content: 'This is my Angular Universal application' },
-      { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:title', content: 'My Angular Universal Application' },
-      { name: 'twitter:description', content: 'This is my Angular Universal application' },
+      { name: "og:url", content: "https://universal-ssr.netlify.app/login" },
 
     ])
     this.meta.addTag({ name: "twitter:card", content: "summary" });

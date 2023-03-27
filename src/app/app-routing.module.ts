@@ -5,7 +5,7 @@ const routes: Routes = [{ path: '', loadChildren: () => import('./universal/univ
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    initialNavigation: 'enabledBlocking'
+    initialNavigation: 'enabledBlocking', useHash: true
 })],
   exports: [RouterModule]
 })

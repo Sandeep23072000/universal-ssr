@@ -16,8 +16,8 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.canService.setCanonicalURL();
-    console.log(this.canService.setCanonicalURL);
+    // this.canService.setCanonicalURL();
+    // console.log(this.canService.setCanonicalURL);
     // this.title.setTitle('login here for universal access');
 
     this.meta.addTag({ property: "og:title", content: "Login page for products" });

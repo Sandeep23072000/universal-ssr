@@ -21,9 +21,11 @@ export class LoginComponent implements OnInit {
     // this.title.setTitle('login here for universal access');
 
     this.meta.addTags([
-      { name: 'og:title', content: 'My Angular Universal Application' },
-      { name: 'og:description', content: 'This is my Angular Universal application' },
-      { name: "og:url", content: "https://universal-ssr.netlify.app/login" },
+      { property: 'og:title', content: 'My Angular Universal Application' },
+      { property: "og:image", content: "https://picsum.photos/200/300?random=2" },
+      { property: "og:image:alt", content: "Og Image" },
+      { property: 'og:description', content: 'This is my Angular Universal application' },
+      { property: "og:url", content: "https://universal-ssr.netlify.app/login" }
 
     ])
     this.meta.addTag({ name: "twitter:card", content: "summary" });

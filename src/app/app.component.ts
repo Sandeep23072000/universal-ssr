@@ -19,28 +19,28 @@ export class AppComponent implements OnInit {
   ) { }
   ngOnInit(): void {
 
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd),
-    )
-      .subscribe(() => {
+    // this.router.events.pipe(
+    //   filter(event => event instanceof NavigationEnd),
+    // )
+    //   .subscribe(() => {
 
-        var rt = this.getChild(this.activatedRoute)
+    //     var rt = this.getChild(this.activatedRoute)
 
-        rt.data.subscribe((data: any) => {
-          console.log(data);
-          this.title.setTitle(data.title)
+    //     rt.data.subscribe((data: any) => {
+    //       console.log(data);
+    //       this.title.setTitle(data.title)
 
-        });
+    //     });
 
-      });
+    //   });
 
-    }
-    getChild(activatedRoute: ActivatedRoute): any {
-      if (activatedRoute.firstChild) {
-        return this.getChild(activatedRoute.firstChild);
-      } else {
-        return activatedRoute;
-      }
+    // }
+    // getChild(activatedRoute: ActivatedRoute): any {
+    //   if (activatedRoute.firstChild) {
+    //     return this.getChild(activatedRoute.firstChild);
+    //   } else {
+    //     return activatedRoute;
+    //   }
 
   }
 }

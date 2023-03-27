@@ -10,6 +10,6 @@
     <loc>https://universal-ssr.netlify.app/login</loc>
   </url>
   <url>
-    <loc>https://universal-ssr.netlify.app/details</loc>
+    <loc>https://universal-ssr.netlify.app/details/id</loc>
   </url>
 </urlset>

@@ -18,7 +18,7 @@ import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@a
     RouterModule,
      
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

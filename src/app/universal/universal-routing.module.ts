@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { AccountComponent } from './account/account.component';
 import { DetailsComponent } from './details/details.component';
@@ -16,7 +17,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [
+    BrowserModule.withServerTransition({ appId: 'universal-ssr' }),
+    RouterModule.forChild(routes)
+  ],
   exports: [RouterModule]
 })
 export class UniversalRoutingModule { }

@@ -17,7 +17,7 @@ export class AccountComponent implements OnInit  {
     this.meta.updateTag({ property: "og:type", content: "Here, We give you some information of account" });
     this.meta.updateTag({ property: "og:image", content: "https://source.unsplash.com/random/200x200?sig=1" });
     this.meta.updateTag({ property: "og:image:alt", content: "Og Image" });
-    this.meta.updateTag({ property: "og:url", content: "https://universal-ssr.netlify.app/#/account" });
+    this.meta.updateTag({ property: "og:url", content: "https://universal-ssr.netlify.app/account" });
     this.meta.updateTag({ property: "og:description", content: "Account page here for information of account" });
 
 

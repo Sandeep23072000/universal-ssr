@@ -15,13 +15,6 @@ export class DetailsComponent implements OnInit {
   images: any;
 
   constructor(private meta: Meta, private title: Title, private route: ActivatedRoute, private http: HttpClient, private canService: CanonicalService) {
-    this.apidata();
-    this.Ogdata();
-  }
-
-  ngOnInit(): void {
-  }
-  apidata(){
     this.iddata = this.route.snapshot.params['id'];
     this.http.get('https://dummyjson.com/products/' + this.iddata).subscribe((response: any) => {
       console.log(response)
@@ -31,10 +24,7 @@ export class DetailsComponent implements OnInit {
         console.log(this.productlist.images[0]);
         
       });
-    })
-  }
-  Ogdata() {
-    // this.canService.setCanonicalURL();
+    
     this.title.setTitle('Product Details List for selected Product');
 
     this.meta.updateTag({ property: "og:title", content: "Product details Page" });
@@ -56,6 +46,12 @@ export class DetailsComponent implements OnInit {
     this.meta.updateTag({
       name: 'keywords', content: 'product details,product details page design,product details are not stamped on lead,product details page design html,product details example,product details page,product details table,product details page design bootstrap,product details page design codepen,product details api,product details app,product details amazon,product details acer,product details an,product amount details hackerrank solution,product data analyst,product details by barcode,product details bootstrap,product details by hsn code,product details by serial number,product details bootstrap 5,product details by qr code online,product details by barcode online,product details by qr code,product details card,product details codepen,product details card codepen,product details component in angular,product details css,product details card design,product details c# cognizant,product description copywriting,product details design,product details dataset,product details database,product details design codepen,product information database,product description definition,product description design'
     });
+  })
+    // this.apidata();
+    // this.Ogdata();
+  }
+
+  ngOnInit(): void {
   }
 
 }

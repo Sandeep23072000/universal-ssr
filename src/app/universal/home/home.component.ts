@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
     this.meta.updateTag({ property: "og:type", content: "Here, We can see product list according to desired products." });
     this.meta.updateTag({ property: "og:image", content: "https://picsum.photos/200/300?random=2" });
     this.meta.updateTag({ property: "og:image:alt", content: "Og Image" });
-    this.meta.updateTag({ property: "og:url", content: "https://universal-ssr.netlify.app/" });
+    this.meta.updateTag({ property: "og:url", content: "https://universal-ssr.netlify.app/#/" });
     this.meta.updateTag({ property: "og:description", content: "Since some online shoppers only scan text on websites, it might be helpful to use bullet points that cover the most important product details. Bullet points should generally be used for specs (like dimensions) or short phrases (like features) so they are quick and easy to read." });
 
     this.meta.addTag({ name: "twitter:card", content: "summary" });

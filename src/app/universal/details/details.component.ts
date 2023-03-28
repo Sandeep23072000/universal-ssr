@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
-// import { ParamMap } from '@angular/router';
 import { CanonicalService } from 'src/app/services/canonical.service';
 
 @Component({
@@ -16,22 +15,23 @@ export class DetailsComponent implements OnInit {
   images: any;
 
   constructor(private meta: Meta, private title: Title, private route: ActivatedRoute, private http: HttpClient, private canService: CanonicalService) {
-    this.route.paramMap.subscribe((params: any) => {
-      this.iddata = +params.get('id')
-    })
-    // this.iddata = this.route.snapshot.paramMap.get('id');
+    this.Ogdata();
+    this.apidata();
+  }
+
+  ngOnInit(): void {
+  }
+  apidata(){
+    this.iddata = this.route.snapshot.params['id'];
     this.http.get('https://dummyjson.com/products/' + this.iddata).subscribe((response: any) => {
       console.log(response)
       this.productlist = response;
       this.productlist?.images.forEach((item: any) => {
         this.images = this.productlist.images[0];
         console.log(this.productlist.images[0]);
-        this.Ogdata();
+        
       });
     })
-  }
-
-  ngOnInit(): void {
   }
   Ogdata() {
     // this.canService.setCanonicalURL();

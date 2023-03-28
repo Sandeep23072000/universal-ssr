@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
+import { ParamMap } from '@angular/router';
 import { CanonicalService } from 'src/app/services/canonical.service';
 
 @Component({
@@ -15,11 +16,7 @@ export class DetailsComponent implements OnInit {
   images: any;
 
   constructor(private meta: Meta, private title: Title, private route: ActivatedRoute, private http: HttpClient, private canService: CanonicalService) {
-    // this.iddata = this.route.snapshot.params['id'];
-    this.iddata = 1;
-
-    console.log(this.iddata);
-    
+    this.iddata = this.route.snapshot.paramMap.get('id');
     this.http.get('https://dummyjson.com/products/' + this.iddata).subscribe((response: any) => {
       console.log(response)
       this.productlist = response;

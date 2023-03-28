@@ -18,7 +18,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    BrowserModule.withServerTransition({ appId: 'universal-ssr' }),
     RouterModule.forChild(routes)
   ],
   exports: [RouterModule]

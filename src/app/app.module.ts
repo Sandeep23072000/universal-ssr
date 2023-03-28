@@ -12,7 +12,7 @@ import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@a
     AppComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule.withServerTransition({ appId: 'universal-ssr' }),
     AppRoutingModule,
     HttpClientModule,
     RouterModule,

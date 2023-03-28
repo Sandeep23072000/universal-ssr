@@ -15,8 +15,8 @@ export class DetailsComponent implements OnInit {
   images: any;
 
   constructor(private meta: Meta, private title: Title, private route: ActivatedRoute, private http: HttpClient, private canService: CanonicalService) {
-    this.Ogdata();
     this.apidata();
+    this.Ogdata();
   }
 
   ngOnInit(): void {

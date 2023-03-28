@@ -41,7 +41,7 @@ export class DetailsComponent implements OnInit {
     this.meta.updateTag({ property: "og:type", content: "Here, We can see product datails according to desired products." });
     this.meta.updateTag({ property: "og:image", content: this.images });
     this.meta.updateTag({ property: "og:image:alt", content: "Og Image" });
-    this.meta.updateTag({ property: "og:url", content: "https://universal-ssr.netlify.app/productdetails/"+ this.iddata });
+    this.meta.updateTag({ property: "og:url", content: "https://universal-ssr.netlify.app/#/productdetails/"+ this.iddata });
     this.meta.updateTag({ property: "og:description", content: "Since some online shoppers only scan text on websites, it might be helpful to use bullet points that cover the most important product details. Bullet points should generally be used for specs or short phrases  so they are quick and easy to read." });
 
 

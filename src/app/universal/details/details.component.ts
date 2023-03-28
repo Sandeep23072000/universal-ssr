@@ -19,17 +19,23 @@ export class DetailsComponent implements OnInit {
     this.http.get('https://dummyjson.com/products/' + this.iddata).subscribe((response: any) => {
       console.log(response)
       this.productlist = response;
+      this.productlist?.images.forEach((item: any) => {
+        this.images = this.productlist.images[0];
+        console.log(this.productlist.images[0]);
+        this.Ogdata();
+      });
     })
   }
 
   ngOnInit(): void {
-
+  }
+  Ogdata() {
     // this.canService.setCanonicalURL();
     this.title.setTitle('Product Details List for selected Product');
-    
+
     this.meta.addTag({ property: "og:title", content: "Product details Page" });
     this.meta.addTag({ property: "og:type", content: "Here, We can see product datails according to desired products." });
-    this.meta.addTag({ property: "og:image", content: "https://picsum.photos/200/300?random=2" });
+    this.meta.addTag({ property: "og:image", content: this.images });
     this.meta.addTag({ property: "og:image:alt", content: "Og Image" });
     this.meta.addTag({ property: "og:url", content: "https://universal-ssr.netlify.app/details" });
     this.meta.updateTag({ property: "og:description", content: "Since some online shoppers only scan text on websites, it might be helpful to use bullet points that cover the most important product details. Bullet points should generally be used for specs or short phrases  so they are quick and easy to read." });
@@ -46,6 +52,6 @@ export class DetailsComponent implements OnInit {
     this.meta.addTag({
       name: 'keywords', content: 'product details,product details page design,product details are not stamped on lead,product details page design html,product details example,product details page,product details table,product details page design bootstrap,product details page design codepen,product details api,product details app,product details amazon,product details acer,product details an,product amount details hackerrank solution,product data analyst,product details by barcode,product details bootstrap,product details by hsn code,product details by serial number,product details bootstrap 5,product details by qr code online,product details by barcode online,product details by qr code,product details card,product details codepen,product details card codepen,product details component in angular,product details css,product details card design,product details c# cognizant,product description copywriting,product details design,product details dataset,product details database,product details design codepen,product information database,product description definition,product description design'
     });
-
   }
+
 }

@@ -39,12 +39,12 @@ export class HomeComponent implements OnInit {
     this.meta.addTag({ name: 'description', content: 'The product list is based on list of product which have many types of products like electronics items like mobile, laptop and more.', keywords: 'product list,product quantity list,product list of quest pharmaceuticals,qnet products list,woocommerce product list query,product list of quest,dokan_product_listing_query,amazon product listing quality,list.product power query,product list react,product list react native,product_list_random,product recalls list,product recall list uk,product rate list,product retailers list,cannatrek product list reddit,product list sample,product list sample data,product list smart value,product list sample api,product list synonyms,product list shortcode woocommerce,product list screen,product list schema,product list template,product list template html,product list template excel,product list template bootstrap,product list table,product list template free download,product list template html css,product list template with pictures excel,product list ui,product list ux,unilever products list,product listing upwork,product unit list,product list of unimed unihealth'});
     
 
-    this.meta.addTag({ property: "og:title", content: "List of products" });
-    this.meta.addTag({ property: "og:type", content: "Here, We can see product list according to desired products." });
-    this.meta.addTag({ property: "og:image", content: "https://picsum.photos/200/300?random=2" });
-    this.meta.addTag({ property: "og:image:alt", content: "Og Image" });
-    this.meta.addTag({ property: "og:url", content: "https://universal-ssr.netlify.app/" });
-    this.meta.addTag({ property: "og:description", content: "Since some online shoppers only scan text on websites, it might be helpful to use bullet points that cover the most important product details. Bullet points should generally be used for specs (like dimensions) or short phrases (like features) so they are quick and easy to read." });
+    this.meta.updateTag({ property: "og:title", content: "List of products" });
+    this.meta.updateTag({ property: "og:type", content: "Here, We can see product list according to desired products." });
+    this.meta.updateTag({ property: "og:image", content: "https://picsum.photos/200/300?random=2" });
+    this.meta.updateTag({ property: "og:image:alt", content: "Og Image" });
+    this.meta.updateTag({ property: "og:url", content: "https://universal-ssr.netlify.app/" });
+    this.meta.updateTag({ property: "og:description", content: "Since some online shoppers only scan text on websites, it might be helpful to use bullet points that cover the most important product details. Bullet points should generally be used for specs (like dimensions) or short phrases (like features) so they are quick and easy to read." });
 
     this.meta.addTag({ name: "twitter:card", content: "summary" });
     this.meta.addTag({ name: "twitter:site", content: "@getproducts" });

@@ -6,6 +6,7 @@ import { UniversalComponent } from './universal.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { DetailsComponent } from './details/details.component';
+import { AccountComponent } from './account/account.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { DetailsComponent } from './details/details.component';
     UniversalComponent,
     HomeComponent,
     LoginComponent,
-    DetailsComponent
+    DetailsComponent,
+    AccountComponent
   ],
   imports: [
     CommonModule,

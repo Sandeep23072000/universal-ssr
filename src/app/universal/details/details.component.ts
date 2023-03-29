@@ -35,13 +35,13 @@ export class DetailsComponent implements OnInit {
     this.meta.updateTag({ property: "og:description", content: this.productlist.description });
 
 
-    this.meta.updateTag({ name: "twitter:card", content: "summary" });
+    this.meta.updateTag({ name: "twitter:title", content: this.productlist.title });
+    // this.meta.updateTag({ name: "twitter:card", content:"" });
+    this.meta.updateTag({ name: "twitter:image", content: this.images });
     this.meta.updateTag({ name: "twitter:site", content: "@getproducts" });
     this.meta.updateTag({ name: "twitter:creator", content: "@productsh" });
-    this.meta.addTag({ name: "twitter:image", content: "https://picsum.photos/200/300" });
-    this.meta.addTag({ name: "twitter:image:alt", content: "Images" });
-    this.meta.updateTag({ name: "twitter:title", content: "Details of Products" });
-    this.meta.updateTag({ name: "twitter:description", content: "Here, We will discribe the list of related products as Mobile phones, laptops and other type of electronic products and some more." });
+    this.meta.addTag({ name: "twitter:image:alt", content: "Product Images" });
+    this.meta.updateTag({ name: "twitter:description", content: this.productlist.description });
 
     this.meta.updateTag({
       name: 'keywords', content: 'product details,product details page design,product details are not stamped on lead,product details page design html,product details example,product details page,product details table,product details page design bootstrap,product details page design codepen,product details api,product details app,product details amazon,product details acer,product details an,product amount details hackerrank solution,product data analyst,product details by barcode,product details bootstrap,product details by hsn code,product details by serial number,product details bootstrap 5,product details by qr code online,product details by barcode online,product details by qr code,product details card,product details codepen,product details card codepen,product details component in angular,product details css,product details card design,product details c# cognizant,product description copywriting,product details design,product details dataset,product details database,product details design codepen,product information database,product description definition,product description design'

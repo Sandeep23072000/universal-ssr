@@ -21,9 +21,9 @@ export class HomeComponent implements OnInit {
     private meta: Meta,
     private canservice: CanonicalService
   ) {
-    this.http.get('https://dummyjson.com/products').subscribe((response:any) => {
+    this.http.get('https://fakestoreapi.com/products').subscribe((response:any) => {
       console.log(response)
-      this.productlist = response.products; 
+      this.productlist = response; 
       console.log(this.productlist);
       
     // this.http.get('https://virvit.mydevpartner.website/vvapi/v1/jobs/').subscribe((response: any) => {

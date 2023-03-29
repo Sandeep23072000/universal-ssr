@@ -16,20 +16,20 @@ export class DetailsComponent implements OnInit {
 
   constructor(private meta: Meta, private title: Title, private route: ActivatedRoute, private http: HttpClient, private canService: CanonicalService) {
     this.iddata = this.route.snapshot.params['id'];
-    this.http.get('https://dummyjson.com/products/' + this.iddata).subscribe((response: any) => {
+    this.http.get('https://fakestoreapi.com/products/' + this.iddata).subscribe((response: any) => {
       console.log(response)
       this.productlist = response;
-      this.productlist?.images.forEach((item: any) => {
-        this.images = this.productlist.images[0];
-        console.log(this.productlist.images[0]);
+      // this.productlist?.images.forEach((item: any) => {
+      //   this.images = this.productlist.images[0];
+      //   console.log(this.productlist.images[0]);
         
-      });
+      // });
     
     this.title.setTitle('Product Details List for selected Product');
 
     this.meta.updateTag({ property: "og:title", content: this.productlist.title });
     this.meta.updateTag({ property: "og:type", content: this.productlist.category });
-    this.meta.updateTag({ property: "og:image", content: this.images });
+    this.meta.updateTag({ property: "og:image", content: this.productlist.images });
     this.meta.updateTag({ property: "og:image:alt", content: "Product Image" });
     this.meta.updateTag({ property: "og:url", content: "https://universal-ssr.netlify.app/productdetails/"+ this.iddata });
     this.meta.updateTag({ property: "og:description", content: this.productlist.description });
@@ -37,7 +37,7 @@ export class DetailsComponent implements OnInit {
 
     this.meta.updateTag({ name: "twitter:title", content: this.productlist.title });
     this.meta.updateTag({ name: "twitter:type", content: this.productlist.category });
-    this.meta.updateTag({ name: "twitter:image", content: this.images });
+    this.meta.updateTag({ name: "twitter:image", content: this.productlist.images });
     this.meta.updateTag({ name: "twitter:site", content: "@getproducts" });
     this.meta.updateTag({ name: "twitter:creator", content: "@productsh" });
     this.meta.addTag({ name: "twitter:image:alt", content: "Product Images" });

@@ -40,11 +40,11 @@
                     </h6>
                 </div>
                 <div class="col-6">
-                    <div *ngFor="let item of productlist?.images">
+                    <!-- <div *ngFor="let item of productlist?.image"> -->
 
-                        <img src="{{item}}" alt="Product Image" ngxExpires="30d">
+                        <img src="{{productlist?.image}}" alt="Product Image" ngxExpires="30d" style="height: 400px; width: 400px;">
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
 

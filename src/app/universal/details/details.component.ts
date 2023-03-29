@@ -36,7 +36,7 @@ export class DetailsComponent implements OnInit {
 
 
     this.meta.updateTag({ name: "twitter:title", content: this.productlist.title });
-    // this.meta.updateTag({ name: "twitter:card", content:"" });
+    this.meta.updateTag({ name: "twitter:type", content: this.productlist.category });
     this.meta.updateTag({ name: "twitter:image", content: this.images });
     this.meta.updateTag({ name: "twitter:site", content: "@getproducts" });
     this.meta.updateTag({ name: "twitter:creator", content: "@productsh" });

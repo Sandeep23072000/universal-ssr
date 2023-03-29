@@ -29,7 +29,7 @@ export class DetailsComponent implements OnInit {
 
     this.meta.updateTag({ property: "og:title", content: this.productlist.title });
     this.meta.updateTag({ property: "og:type", content: this.productlist.category });
-    this.meta.updateTag({ property: "og:image", content: this.productlist.images });
+    this.meta.updateTag({ property: "og:image", content: this.productlist.image });
     this.meta.updateTag({ property: "og:image:alt", content: "Product Image" });
     this.meta.updateTag({ property: "og:url", content: "https://universal-ssr.netlify.app/productdetails/"+ this.iddata });
     this.meta.updateTag({ property: "og:description", content: this.productlist.description });
@@ -37,7 +37,7 @@ export class DetailsComponent implements OnInit {
 
     this.meta.updateTag({ name: "twitter:title", content: this.productlist.title });
     this.meta.updateTag({ name: "twitter:type", content: this.productlist.category });
-    this.meta.updateTag({ name: "twitter:image", content: this.productlist.images });
+    this.meta.updateTag({ name: "twitter:image", content: this.productlist.image });
     this.meta.updateTag({ name: "twitter:site", content: "@getproducts" });
     this.meta.updateTag({ name: "twitter:creator", content: "@productsh" });
     this.meta.addTag({ name: "twitter:image:alt", content: "Product Images" });

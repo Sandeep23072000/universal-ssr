@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -16,6 +16,7 @@ import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@a
     AppRoutingModule,
     HttpClientModule,
     RouterModule,
+    BrowserAnimationsModule,
      
   ],
   providers: [],

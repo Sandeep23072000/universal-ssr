@@ -1,7 +1,0 @@
-ser-agent: Googlebot
-Disallow: /nogooglebot/
-
-User-agent: *
-Allow: /
-
-Sitemap: https://universal-ssr.netlify.app/home/sitemap.xml
